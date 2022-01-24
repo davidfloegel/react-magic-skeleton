@@ -11,7 +11,7 @@ const Wrapper = styled.div`
 `;
 
 export default {
-  title: "Skeleton",
+  title: "Remote Demo",
   component: Skeleton,
 };
 
@@ -59,6 +59,4 @@ const Demo = () => {
   );
 };
 
-const Template = () => <Demo />;
-
-export const Provider = Template.bind({});
+export const RemoteDemo = () => <Demo />;
