@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import styled from "styled-components";
 
-import { SkeletonContext, Skeleton } from "../src";
+import { SkeletonProvider, Skeleton } from "../src";
 import { Poster } from "./poster";
 
 const Wrapper = styled.div`
@@ -35,7 +35,7 @@ const Demo = () => {
     <Wrapper>
       <h1>Star Wars Movies</h1>
 
-      <SkeletonContext.Provider value={{ isLoading }}>
+      <SkeletonProvider isLoading={isLoading}>
         {isLoading || !data ? (
           <>
             <Poster image="mock" title="mock" year="mock" imdbID="mock" />
@@ -55,7 +55,7 @@ const Demo = () => {
             ))}
           </>
         )}
-      </SkeletonContext.Provider>
+      </SkeletonProvider>
     </Wrapper>
   );
 };

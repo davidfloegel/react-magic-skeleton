@@ -1,1 +1,3 @@
-export { Skeleton, SkeletonContext } from "./skeleton";
+export { Skeleton } from "./skeleton";
+
+export { SkeletonProvider, SkeletonContext } from "./context";
