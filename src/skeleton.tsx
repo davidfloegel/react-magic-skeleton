@@ -4,12 +4,6 @@ import { useDimensions } from "./use-dimensions";
 import { LoadingBlock } from "./block";
 import { SkeletonProps } from "./types";
 
-/**
- * TODO
- * - recalculate skeleton when dom changes
- * - animate the content appearing
- */
-
 export const Skeleton: React.FC<SkeletonProps> = ({
   children: defaultChildren,
   isLoading: customLoading = false,
