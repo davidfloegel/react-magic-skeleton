@@ -10,9 +10,8 @@ const Wrapper = styled.div`
   margin: 0 auto;
 `;
 
-// More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: "Demo/Skeleton",
+  title: "Skeleton",
   component: Skeleton,
 };
 
@@ -62,4 +61,4 @@ const Demo = () => {
 
 const Template = () => <Demo />;
 
-export const Primary = Template.bind({});
+export const Provider = Template.bind({});
