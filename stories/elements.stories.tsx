@@ -14,8 +14,8 @@ export default {
   component: Skeleton,
 };
 
-const Demo = () => {
-  const [isLoading, setIsLoading] = useState(false);
+const Demo = ({ defaultIsLoading = false }) => {
+  const [isLoading, setIsLoading] = useState(defaultIsLoading);
 
   return (
     <Wrapper>
@@ -183,4 +183,5 @@ const Demo = () => {
   );
 };
 
-export const Elements = () => <Demo />;
+export const ElementsLoading = () => <Demo defaultIsLoading />;
+export const ElementsFinished = () => <Demo />;
