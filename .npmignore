@@ -1,0 +1,13 @@
+.git
+.github
+.parcel-cache
+.storybook
+coverage
+node_modules
+src
+stories
+.eslintignore
+.eslintrc
+README.md
+build-storybook.log
+tsconfig.json
