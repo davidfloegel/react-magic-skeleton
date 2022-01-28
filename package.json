@@ -6,6 +6,7 @@
   "module": "dist/module.js",
   "types": "dist/types.d.ts",
   "license": "MIT",
+  "private": false,
   "repository": {
     "type": "git",
     "url": "https://github.com/davidfloegel/react-magic-skeleton.git"
