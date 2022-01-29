@@ -29,5 +29,5 @@ export const Skeleton: React.FC<SkeletonProps> = ({
     return children;
   };
 
-  return <div ref={elementRef as any}>{renderContent()}</div>;
+  return <span ref={elementRef as any}>{renderContent()}</span>;
 };
