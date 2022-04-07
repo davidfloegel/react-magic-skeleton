@@ -106,12 +106,18 @@ const Demo = ({ defaultIsLoading = false }) => {
           <div className="card-body">
             <Skeleton>
               <h5 className="card-title">Card title</h5>
+            </Skeleton>
 
+            <Skeleton>
               <p className="card-text">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
+            </Skeleton>
 
+            <br />
+
+            <Skeleton>
               <a href="#" className="btn btn-primary">
                 Go somewhere
               </a>

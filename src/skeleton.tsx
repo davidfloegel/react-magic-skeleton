@@ -29,5 +29,22 @@ export const Skeleton: React.FC<SkeletonProps> = ({
     return children;
   };
 
-  return <span ref={elementRef as any}>{renderContent()}</span>;
+  return (
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "flex-start",
+        alignItems: "flex-start",
+      }}
+    >
+      <span
+        className={`react-magic-skeleton-wrapper ${
+          isLoading ? "react-magic-skeleton-wrapper-loading" : null
+        }`}
+        ref={elementRef as any}
+      >
+        {children}
+      </span>
+    </div>
+  );
 };
